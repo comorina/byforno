@@ -1,0 +1,42 @@
+.root-home {
+  border: 1px solid red;
+  height: 100%;
+}
+
+.home-main-container {
+  border: 1px solid white;
+  color: whitesmoke;
+  margin-top: 5%;
+  display: flex;
+  height: 90%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.home-tile-container {
+  width: 40%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading-title {
+}
+.heading-title p {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 80px;
+  font-family: "Comfortaa, sans-serif";
+}
+
+.heading-sub-title{
+  width: 85%;
+}
+
+
+.home-image-container {
+  width: 50%;
+  border: 1px solid red;
+  height: 95%;
+}

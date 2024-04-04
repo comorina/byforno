@@ -1,0 +1,48 @@
+.logo-name{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    padding-top: .5rem;
+}
+
+.navItem {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 3px; 
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;  
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 16px;
+  }
+  
+  .navItem::before,
+  .navItem::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: rgb(223, 84, 84); 
+    bottom: 0;
+    transition: width 0.3s; 
+  }
+  
+  .navItem::before {
+    left: 0;
+  }
+  
+  .navItem::after {
+    right: 0;
+  }
+  
+  .navItem:hover::before,
+  .navItem:hover::after {
+    width: 100%; 
+  }
+  
