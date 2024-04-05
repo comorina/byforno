@@ -1,16 +1,15 @@
 .root-home {
-  border: 1px solid red;
+  border: 1px solid rgb(3, 2, 2);
   height: 100%;
 }
 
 .home-main-container {
-  border: 1px solid white;
   color: whitesmoke;
   margin-top: 5%;
   display: flex;
   height: 90%;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .home-tile-container {
@@ -32,11 +31,46 @@
 
 .heading-sub-title{
   width: 85%;
+  line-height: 30px;
 }
 
+
+.button-container{
+  width: 220px;
+  height: 55px;
+  margin-top: 25px;
+}
+
+.learn-more-container{
+  width: 200px;
+  height: 50px;
+  background: rgba(8, 59, 213, 0.908);
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  transition: box-shadow .2s;
+}
+
+.learn-more-container:hover{
+  box-shadow: 1px 3px 10px rgba(34, 78, 129, 0.964); 
+  height: 51px;
+  background: rgba(4, 118, 224, 0.779);
+}
 
 .home-image-container {
   width: 50%;
   border: 1px solid red;
   height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  position: relative;
+}
+
+.image-card-container{
+  width: 400px;
+  height: 500px;
+  border: 1px solid white;
+  transform-style: preserve-3d;
 }

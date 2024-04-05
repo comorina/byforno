@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import "../HomeComponent/home.css";
 import { homeData } from "./homeModel";
-import photo from "../../assets/images/staticImage.png";
+import photo from "../../assets/images/ByForno-animated-pi.jpg";
 
 function HomeComponent() {
   const data = homeData[0];
@@ -16,10 +16,20 @@ function HomeComponent() {
           <div className="heading-sub-title">
             <p>{data.homeSubheadingTitle}</p>
           </div>
+          <div className="button-container">
+            {data?.button?.map((item: any, index: any)=>{
+              return(
+                <button className="learn-more-container">
+                  {item['buttonlabel']}
+                </button>
+              )
+            })}
+          </div>
         </div>
         <div className="home-image-container">
-          <img src='/Users/shivampandey/Documents/Freelancing/byforno/src/app/pages/HomeComponent/homeComponent.tsx
-/Users/shivampandey/Documents/Freelancing/byforno/src/app/assets/images/staticImage.png' alt="" />
+          <div className="image-card-container">
+            
+          </div>
         </div>
       </Container>
     </div>
